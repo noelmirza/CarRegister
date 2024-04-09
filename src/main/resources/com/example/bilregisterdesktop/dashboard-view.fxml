@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bilregisterdesktop.Controller.DashboardController">
+    <children>
+        <AnchorPane prefHeight="445.0" prefWidth="668.0">
+            <children>
+                <MenuBar prefHeight="27.0" prefWidth="679.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Søk etter bil">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#showCars" text="Vis alle biler" />
+                                <MenuItem mnemonicParsing="false" onAction="#searchByRegNum" text="Søk etter Reg nummer" />
+                                <MenuItem mnemonicParsing="false" onAction="#ModelOrName" text="Søk etter model" />
+                            </items>
+                        </Menu>
+                  <Menu mnemonicParsing="false" text="Slett bil">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#deleteCustomer" text="Slett bil og kunde" />
+                    </items>
+                  </Menu>
+                        <Menu mnemonicParsing="false" text="Legg til ny bil">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#showAddCarForm" text="Registrer ny bil" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="oppdater registrert bil">
+                            <items>
+                        <MenuItem mnemonicParsing="false" onAction="#updateCustomer" text="Sett ny kunde info" />
+                                <MenuItem mnemonicParsing="false" onAction="#updateRegisteredCar" text=" Oppdater bil" />
+                            </items>
+                        </Menu>
+                  <Menu mnemonicParsing="false" text="Kunde">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#searchCustomer" text="søk" />
+                        <MenuItem mnemonicParsing="false" onAction="#addCustomer" text="Legg til" />
+                        <MenuItem mnemonicParsing="false" text="Slett" />
+                    </items>
+                  </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

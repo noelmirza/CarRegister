@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bilregisterdesktop.Controller.SearchCustomerInfoController">
+    <Label text="Søk etter kundeinformasjon fra REG nummer" />
+    <TextField fx:id="regNumTextField" promptText="Skriv inn registreringsnummer" />
+    <Button onAction="#searchCustomerInfo" text="Søk" />
+    <Label text="Kundeinformasjon" />
+    <TextArea fx:id="customerInfoTextArea" editable="false" />
+</VBox>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="407.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bilregisterdesktop.Controller.AddCustomerInfoController">
+    <children>
+        <Label text="Legg til kundeinformasjon" />
+        <HBox>
+            <Label text="Velg bil:" />
+            <ComboBox fx:id="carComboBox" prefWidth="200" />
+        </HBox>
+        <HBox>
+            <Label text="Navn:" />
+            <TextField fx:id="customerNameTextField" />
+        </HBox>
+        <HBox>
+            <Label text="Nummer:" />
+            <TextField fx:id="customerNumberTextField" />
+        </HBox>
+        <HBox>
+            <Label text="E-post:" />
+            <TextField fx:id="customerEmailTextField" />
+        </HBox>
+        <Button onAction="#saveCustomerInfo" text="Lagre" />
+    </children>
+</VBox>

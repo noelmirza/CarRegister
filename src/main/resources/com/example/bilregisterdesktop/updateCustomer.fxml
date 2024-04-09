@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.bilregisterdesktop.Controller.UpdateCustomerController">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Oppdater Kundeinformasjon"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Velg kunde:" />
+        <ComboBox fx:id="customerComboBox" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Nytt navn/nummer/email:" />
+        <TextField fx:id="newInfoTextField" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Velg informasjonstype:" />
+        <ComboBox fx:id="infoTypeComboBox" />
+    </HBox>
+
+    <Button text="Oppdater" onAction="#updateCustomerInfo" />
+
+</VBox>

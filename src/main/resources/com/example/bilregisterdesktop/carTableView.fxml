@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.bilregisterdesktop.Controller.CarTableController">
+    <AnchorPane prefHeight="445.0" prefWidth="679.0">
+        <TableView fx:id="carTable">
+            <columns>
+                <TableColumn text="ID" fx:id="idColumn"/>
+                <TableColumn text="Model" fx:id="modelColumn"/>
+                <TableColumn text="Name" fx:id="nameColumn"/>
+                <TableColumn text="Status" fx:id="statusColumn"/>
+                <TableColumn text="RegNummer" fx:id="regNumColumn"/>
+                <TableColumn text="Year Model" fx:id="year_modelColumn"/>
+                <TableColumn text="Price" fx:id="priceColumn"/>
+                <TableColumn text="KM" fx:id="kmColumn"/>
+                <TableColumn text="Customer ID" fx:id="customer_idColumn"/>
+            </columns>
+        </TableView>
+    </AnchorPane>
+</VBox>
